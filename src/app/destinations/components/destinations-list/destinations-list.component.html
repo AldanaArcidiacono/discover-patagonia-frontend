@@ -1,0 +1,25 @@
+<div class="destinations">
+  <div class="col">
+    <h4>Patagonia Destinations</h4>
+    <ul class="list-group">
+      @for(destine of destinations; track destine){
+      <li class="list-group-item">
+        <p>{{ destine.city }}</p>
+      </li>
+      }
+    </ul>
+  </div>
+
+  <div class="col">
+    <h4>Add a new destination</h4>
+    <form>
+      <input
+        type="text"
+        placeholder="New Destination"
+        class="form-control mb-2"
+      />
+
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>
